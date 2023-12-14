@@ -1,134 +1,71 @@
-# Inheritance
+# Proyecto Progra 1 
 
-## Documentation
+| UNIVERSIDAD NACIONAL    | ESCUELA DE INFORMÁTICA                          |
+| ----------------------- | ----------------------------------------------- |
+| FECHA REVISIÓN PARCIAL: | MARTES 16 de Enero 2024 (20%)                   |
+| FECHA REVISIÓN FINAL:   | MARTES 13 de Febrero 2024 (20%)                 |
+| PORCENTAJE TOTAL:       | Corresponde a un 40% de la nota final del curso |
 
-- [Technical pages](https://una-eif201-progra1-master.github.io/dev.funda.oop-inheritance/)
-- [Course website](https://mikeguzman.dev/software-development/programming-fundations/object-oriented-programming/)
+## PLANTEAMIENTO DEL PROBLEMA Y OBJETIVOS
 
-## Resources
+## Contexto
 
-- [CMake](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
-- [CLion from Jetbrains](https://www.jetbrains.com/help/clion/quick-cmake-tutorial.html)
-- [Visual Studio Code](https://code.visualstudio.com/docs/languages/cpp)
-- [Repl.it](https://replit.com/@MaikolGuzman?path=folder/EIF201%20-%20Progra%201)
-- [Github Course Space](https://github.com/una-eif201-progra1-master)
+Desarrollar un "Sistema de Gestión para la Universidad Nacional de Costa Rica" que permita inicialmente administrar estudiantes y sus calificaciones en diferentes materias. El sistema deberá permitir agregar nuevos estudiantes, actualizar calificaciones, calcular promedios de notas y mostrar información de los estudiantes.
 
-## Project Directory Structure
+Adicionalmente, la universidad le permite la inclusión de requerimientos adicionales para fomentar la creatividad y la funcionalidad del sistema.
 
-```bash
-MyProject/
-│
-├── .github/workflows         # [optional] GitHub Actions workflow files
-├── docs/                     # [optional] Documentation files│
-├── src/                      # [required] Source files directory
-│   ├── main.cpp              # [required] Main program file
-│   └── MyClass.cpp           # Implementation of MyClass
-│
-├── include/                  # [required] Header files directory
-│   └── MyClass.h             # Header for MyClass
-│
-├── .gitignore                # [required] Git ignore file
-├── .replit                   # [optional] Repl.it configuration file
-├── replit.nix                # [optional] Repl.it configuration file
-├── CMakeLists.txt            # [required] CMake configuration file
-└── README.md                 # [required] README file
-```
+## REQUERIMIENTOS DE IMPLEMENTACIÓN
 
-1. **.github/workflows**: This is a directory typically used in GitHub repositories for storing workflow files. GitHub
-   workflows are part of GitHub Actions, which automate certain processes in a software development workflow, like
-   running tests, deploying code, or other CI/CD (Continuous Integration/Continuous Deployment) tasks.
+1. Se debe de desarrollar wireframes / mockups de la aplicación para visualizar la funcionalidad de la aplicación antes de iniciar el proyecto.
+2. Es importante que el sistema valide los datos de entrada. No es aceptable que el programa funcione incorrectamente por un error en los datos de entrada. En todo caso, debe informarse al usuario cual es el error y la manera de corregirlo. En ningún momento el sistema deberá permitir la creación de objetos con valores no definidos para los atributos correspondientes.
+3. Se deberán verificar el manejo correcto de las asociaciones entre clases.
+4. Se deberá trabajar de la manera más modular posible, tanto a nivel de clases como a nivel de métodos.
+5. Los estudiantes añaden funcionalidad que puedan solicionarse con los temas que vamos aprendiendo durante el curso. Estas funcionalidades y su implementación deben ser acorde al tiempo y al conocimiento de los estudiantes.
+6. La revisión se hace en dos partes:
+   - PARTE 1: Fundamentos y Estructura Básica.
+     - Fundamentos de programación
+     - Programación orientada a objetos
+     - Principios de diseño (SOLID)
+   - PARTE 2: Diseño avanzado y personalización.
+     - Diseño e implementación.
+     - Relaciones de clases.
+     - Persistencia en archivos de texto y binarios.
+7. La revisión se hace mediante una defensa del proyecto en donde todos los estudiantes del grupo deben contestar preguntas individuales del código implementado en el sistema. Así mismo, todos tienen que estar enterados de todo el código, la lógica, el diseño y la implementación del mismo.
 
-2. **docs/html**: This looks like a directory within the `docs` folder, likely used for storing HTML files related to
-   documentation. The commit message "Final changes" tagged as "now" indicates recent updates or finalization of the
-   documentation in HTML format.
+## ENTREGA Y EVALUACIÓN
 
-3. **include**: This is commonly a directory containing header files in C or C++ projects, but it can also include other
-   types of files in different contexts.
-    1. `MyClass.h`: This contains the declarations of your class or functions.
+El proyecto debe entregarse en el repositorio de Github asignado en el Aula Virtual. No se aceptará ningún proyecto después de esa fecha, ni se admitirá la entrega del proyecto por correo electrónico. El proyecto puede realizarse en grupos.
 
-4. **src**: Short for "source", this directory usually contains the source code of the project.
-    1. `main.cpp`: This is the entry point of your program.
-    2. `MyClass.cpp`: This contains the implementation of a class or functions.
+## PARTE 1 (100 pts): 
 
-5. **.gitignore**: This is a special file used by Git, the version control system. It tells Git which files or
-   directories to ignore in a project, usually things like build outputs, temporary files, or files containing sensitive
-   information.
+| Detalle                                                      | Puntaje |
+| ------------------------------------------------------------ | :-----: |
+| [DISEÑO] Elaboración del diseño de los wireframes del proyecto junto con el análisis de los elementos técnicos a utilizar. |   10    |
+| [DESARROLLO] Implementación correcta de los conceptos básicos de programación (Condicionales, Switchs, Ciclos). |    5    |
+| [DESARROLLO] Implementación de punteros, vectores, y matrices. |   15    |
+| [DESARROLLO] Implementación correcta de clases y objetos. (Miembros de instancia, Static, Funciones virtuales) |   10    |
+| [DESARROLLO] Implementación de colecciones dinámicas, estáticas, listas anidadas. |   10    |
+| [DESARROLLO] Implementación de los conceptos básicos de POO (Encapsulamiento y Herencia). |   10    |
+| [DESARROLLO] Implementación de dos principios de SOLID (Responsabilidad única, Abierto y Cerrado). |   10    |
+| [DEFENSA] Explicación de los estudiantes del tema aplicado en el proyecto. |   10    |
+| [EJECUCIÓN Y PRUEBAS] Ejecución y prueba de la aplicación.   |   20    |
 
-6. **.replit**: This file is specific to Repl.it, an online IDE (Integrated Development Environment). It's used to
-   configure the Repl.it environment, such as specifying the language, build, and run commands.
+## PARTE 2 (100 pts):
 
-7. **CMakeLists.txt**: This is a file used by CMake, a build system that manages the build process in an operating
-   system and compiler-independent manner.
+| Detalle                                                      | Puntaje |
+| ------------------------------------------------------------ | :-----: |
+| [DISEÑO] Actualización del diseño de los wireframes del proyecto junto con el análisis de los elementos técnicos a utilizar. |    5    |
+| [DISEÑO] Elaboración del diagrama de clases UML del proyecto. |   10    |
+| [DESARROLLO] Implementación de relaciones de clases y objetos. |   10    |
+| [DESARROLLO] Mejoras con POO (Polimorfismo y Abstracción).   |   10    |
+| [DESARROLLO] Implementación de mejoras aplicadas en relación con la Ley de Demeter y Bajo acoplamiento y alta cohesión. |    5    |
+| [DESARROLLO] Implementación de persistencia utilizando archivos binários |   10    |
+| [DESARROLLO] Implementación de persistencia utilizando archivos de texto |   10    |
+| [DEFENSA] Explicación de los estudiantes del tema aplicado en el proyecto. |   20    |
+| [EJECUCIÓN Y PRUEBAS] Ejecución y prueba de la aplicación.   |   20    |
 
-8. **README.md**: This file, typically written in Markdown, provides an overview of the project, including instructions
-   on how to install, configure, and use it.
+# Notas
 
-9. **replit.nix**: This is likely a configuration file for Nix, a powerful package manager, used in the context of
-   Repl.it. It specifies dependencies and environment settings for the project.
+- No se permite el plagio o copia de este proyecto. Encaso de copia o plagio de alguna parte o de la totalidad del mismo será notificado a las instancias superiores de la Escuela de Informática para su respectivo proceso.
+- El proyecto presupone que en cualquier momento que usted necesite más información al respecto de un tema, usted debe realizar su propia investigación y estudio de cualquier tema adicional para cumplir y completar con los requerimientos aquí planteados.
 
-## Building the Project
-
-1. **Creating a Build Directory**: It's a good practice to do an out-of-source build. This keeps your build files
-   separate from your source files.
-
-    ```sh
-    mkdir build
-    cd build
-    ```
-
-2. **Running CMake**: From within the `build` directory, run CMake to generate the build system.
-
-    ```sh
-    cmake ..
-    ```
-
-3. **Compiling the Project**: After CMake has done its job, you can use the generated build system to compile the
-   project.
-
-    ```sh
-    make
-    ```
-
-   This will compile your project and generate an executable in the `build` directory.
-
-### Notes
-
-- **CMake Version**: Make sure to specify the minimum required version of CMake that your project needs.
-- **Project Structure**: This is a simple example. Larger projects may have more complex structures, with subdirectories
-  for different modules, tests, third-party libraries, etc.
-- **C++ Standard**: Set the C++ standard according to your project requirements.
-- **Include Directories**: Use `include_directories` to include your header files.
-- **Executable**: Use `add_executable` to specify the executable name and the source files required to build it.
-
-This structure is scalable and can be expanded as your project grows, by adding more source files, headers, and
-potentially CMake configuration files in subdirectories.
-
-## The Example
-
-```c++
-// Example of Inheritance
-class Vehicle {
-public:
-string brand = "Ford";
-
-void honk() {
-cout << "Tuut, tuut!" << endl;
-}
-};
-
-class Car:
-public Vehicle {
-public:
-string model = "Mustang";
-};
-
-int main() {
-Car car1;
-car1.honk();  // Output: Tuut, tuut!
-cout << car1.brand + " " + car1.model;  // Output: Ford Mustang
-return 0;
-}
-
-```
-
-`Car` is a derived class that inherits from the base class `Vehicle`.
